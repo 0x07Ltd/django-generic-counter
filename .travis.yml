@@ -21,4 +21,4 @@ deploy:
   on:
     tags: true
     repo: 0x07Ltd/django-generic-counter
-  distributions: "sdist bdist_wheel"
+  distributions: "sdist"
