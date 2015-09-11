@@ -126,7 +126,8 @@ INSTALLED_APPS = (
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
-    'django_generic_counter'
+    'django_generic_counter',
+    'django_nose'
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
@@ -159,3 +160,5 @@ LOGGING = {
         },
     }
 }
+
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
