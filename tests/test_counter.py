@@ -4,6 +4,7 @@ except ImportError:
     import django.utils.unittest as unittest
 
 from django_dynamic_fixture import G
+from django.db import IntegrityError
 
 from django_generic_counter.models import Counter
 
@@ -39,3 +40,11 @@ class CounterTestCase(unittest.TestCase):
         counter = G(Counter)
         counter.count = 1337
         self.assertEqual(int(counter), 1337)
+
+    def test_counter_name_unique(self):
+        """
+        There can be only one.
+        """
+        Counter.objects.filter(name="Highlander").delete()
+        Counter.objects.create(name="Highlander")
+        self.assertRaises(IntegrityError, Counter.objects.create, name="Highlander")
