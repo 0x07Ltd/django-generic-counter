@@ -11,7 +11,7 @@ SOUTH_ERROR_MESSAGE = """\n
 For South support, customize the SOUTH_MIGRATION_MODULES setting like so:
 
     SOUTH_MIGRATION_MODULES = {
-        'email_log': 'email_log.south_migrations',
+        'django_generic_counter': 'django_generic_counter.south_migrations',
     }
 """
 
