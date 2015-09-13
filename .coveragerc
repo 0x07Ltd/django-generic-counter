@@ -1,2 +1,5 @@
 [report]
-omit = */migrations/*
+omit =
+    */migrations/*
+    */south_migrations/*
+source = django_generic_counter
