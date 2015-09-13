@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/0x07Ltd/django-generic-counter.svg?branch=master)](https://travis-ci.org/0x07Ltd/django-generic-counter)
 django-generic-counter
 ======================
 
