@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/0x07Ltd/django-generic-counter.svg?branch=master)](https://travis-ci.org/0x07Ltd/django-generic-counter)[![Coverage Status](https://coveralls.io/repos/0x07Ltd/django-generic-counter/badge.svg?branch=develop&service=github)](https://coveralls.io/github/0x07Ltd/django-generic-counter?branch=develop)
+[![Build Status](https://travis-ci.org/0x07Ltd/django-generic-counter.svg?branch=master)](https://travis-ci.org/0x07Ltd/django-generic-counter) [![Coverage Status](https://coveralls.io/repos/0x07Ltd/django-generic-counter/badge.svg?branch=master&service=github)](https://coveralls.io/github/0x07Ltd/django-generic-counter?branch=master)
 django-generic-counter
 ======================
 
