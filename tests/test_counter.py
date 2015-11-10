@@ -48,3 +48,16 @@ class CounterTestCase(unittest.TestCase):
         Counter.objects.filter(name="Highlander").delete()
         Counter.objects.create(name="Highlander")
         self.assertRaises(IntegrityError, Counter.objects.create, name="Highlander")
+
+    def test_set_count(self):
+        """
+        Should set the count immediately in the database and update the local value.
+        """
+        counter = G(Counter)
+        counter.count = 1337
+        counter.save()
+        self.assertEqual(int(counter), 1337)
+        self.assertEqual(int(Counter.objects.get(pk=counter.pk)), 1337)
+        counter.set_count(101)
+        self.assertEqual(int(counter), 101)
+        self.assertEqual(int(Counter.objects.get(pk=counter.pk)), 101)

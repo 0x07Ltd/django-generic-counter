@@ -33,3 +33,10 @@ class Counter(models.Model):
         Enable casting to int to display the counter value.
         """
         return self.count
+
+    def set_count(self, value):
+        """
+        Set count immediately in the database and update our local value.
+        """
+        type(self).objects.filter(pk=self.pk).update(count=value)
+        self.count = value
