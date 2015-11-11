@@ -17,7 +17,7 @@ open_local = lambda path: open(os.path.join(os.path.dirname(__file__), path))
 
 config = {
     "name": "django-generic-counter",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "namespace_packages": [],
     "packages": find_packages(exclude=[
         "*.tests",
