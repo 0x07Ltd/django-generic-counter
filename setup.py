@@ -44,7 +44,7 @@ config = {
     # Metadata for upload to PyPI
     "author": 'Ellis Percival',
     "author_email": "ellis@0x07.co.uk",
-    "description": open_local("README.md").read(),
+    "description": open_local("README.rst").read(),
     "classifiers": ["Programming Language :: Python", ],
     "license": "",
     "keywords": "",
