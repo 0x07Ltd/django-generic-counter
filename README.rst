@@ -21,7 +21,7 @@ the ``Counter`` like so:
 
 .. code:: python
 
-    from django_generic_counter import Counter
+    from django_generic_counter.models import Counter
 
     c = Counter(name="Green bottles hanging on the wall", count=10)
     assert int(c) == 10, "Ten green bottles hanging on the wall"
