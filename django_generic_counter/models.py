@@ -6,7 +6,7 @@ class Counter(models.Model):
     A simple counter which can be used to store a count of anything.
     """
     name = models.CharField(max_length=128, unique=True)
-    count = models.IntegerField(default=0)
+    count = models.BigIntegerField(default=0)
 
     def __iadd__(self, other):
         """
