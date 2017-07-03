@@ -53,7 +53,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
-ROOT_URLCONF = 'django_generic_counter.urls'
+# ROOT_URLCONF = 'django_generic_counter.urls'
 
 TEMPLATES = [
     {

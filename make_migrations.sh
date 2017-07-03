@@ -24,11 +24,19 @@ echo_info "Installing Django 1.6..."
 pip install -q "Django<1.7"
 echo_status "DONE"
 
+echo_info "Installing south..."
+pip install -q south
+echo_status "DONE"
+
 echo_status "Running migrations using South..."
 django-admin.py schemamigration --auto django_generic_counter --settings=settings.dev_south
 
 echo_info "Uninstalling Django 1.6..."
 pip uninstall -yq Django
+echo_status "DONE"
+
+echo_info "Uninstalling south..."
+pip uninstall -yq south
 echo_status "DONE"
 
 echo_info "Installing latest Django..."
